@@ -4,3 +4,4 @@
 # my sign
 # sun
 # moon
+# star
