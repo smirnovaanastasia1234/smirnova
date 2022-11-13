@@ -1,5 +1,5 @@
 from transformers import pipeline
-
+#коммент Эльдара 
 classifier = pipeline("sentiment-analysis",   
                       "blanchefort/rubert-base-cased-sentiment")
 x =  input("Введите текст ")
