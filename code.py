@@ -1,3 +1,5 @@
+#коммент Виталий
+!pip install transformers sentencepiece sacremoses
 from transformers import pipeline
 #коммент Эльдара 
 classifier = pipeline("sentiment-analysis",   
