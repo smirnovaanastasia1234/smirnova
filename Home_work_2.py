@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 import matplotlib.pyplot as plt
-pip install transformers sentencepiece sacremoses
+%pip install transformers sentencepiece sacremoses
 from transformers import pipeline
 
 st.header("Определение тональности текстов")
