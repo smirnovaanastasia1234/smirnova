@@ -6,6 +6,7 @@ import seaborn as sns
 import streamlit as st
 import matplotlib.pyplot as plt
 import json
+from transformers import pipeline
 
 st.header("Определение тональности текстов")
 st.subheader("Введите текст для анализа")
