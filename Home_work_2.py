@@ -5,8 +5,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 import matplotlib.pyplot as plt
-import plotly.express as px
-from urllib.request import urlopen
 import json
 
 st.header("Определение тональности текстов")
