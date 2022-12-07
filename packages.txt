@@ -1,1 +1,1 @@
-as
+%pip install transformers sentencepiece sacremoses
