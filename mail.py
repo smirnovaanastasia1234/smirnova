@@ -2,11 +2,10 @@ from fastapi import FastAPI
 from transformers import pipeline
 from pydantic import BaseModel
 
-
 class Item(BaseModel):
     text: str
 
-app = FastAPI(title= "Определение тональности текстов на русском языке")
+app = FastAPI(title= "Определение тональности текстов")
 classifier = pipeline("sentiment-analysis","blanchefort/rubert-base-cased-sentiment")
 
 @app.get("/")
