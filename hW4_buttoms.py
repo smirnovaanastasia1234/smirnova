@@ -16,7 +16,8 @@ text = st.text_area(" ",height=100)
 
 classifier = pipeline("sentiment-analysis",   
                       "blanchefort/rubert-base-cased-sentiment")
-                 
-st.write ("Тональность текста:")
-st.write(classifier(text)[0]["label"])
+if st.button("Определить тональность текста"):
+    
+    st.write ("Тональность текста:")
+    st.write(classifier(text)[0]["label"])
 #end program 
