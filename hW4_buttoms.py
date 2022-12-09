@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np 
 import pandas as pd
 import matplotlib.pyplot as plt 
+import os
 import seaborn as sns
 import streamlit as st
 import transformers
@@ -17,7 +18,7 @@ text = st.text_area(" ",height=100)
 classifier = pipeline("sentiment-analysis",   
                       "blanchefort/rubert-base-cased-sentiment")
 if st.button("Определить тональность текста"):
-    
+
     st.write ("Тональность текста:")
     st.write(classifier(text)[0]["label"])
 #end program 
