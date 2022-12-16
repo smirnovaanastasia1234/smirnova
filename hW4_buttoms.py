@@ -1,5 +1,6 @@
 import streamlit as st
 from transformers import pipeline
+from tensorflow import keras
 
 
 st.header("Определение тональности текстов")
