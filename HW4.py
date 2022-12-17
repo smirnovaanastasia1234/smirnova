@@ -4,6 +4,7 @@ from transformers import pipeline
 
 
 @st.cache
+
 st.header("Определение тональности текстов")
 st.subheader("Введите текст для анализа")
 
