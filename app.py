@@ -1,4 +1,4 @@
-mport streamlit as st
+import streamlit as st
 from transformers import pipeline
 
 @st.cache(allow_output_mutation=True)
