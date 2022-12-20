@@ -3,7 +3,7 @@
 Web-приложение для определения тональности текста. Используются библиотеки:
 
 - [TensorFlow](https://www.tensorflow.org/).
-- [Streamlit[(https://streamlit.io/).
+- [Streamlit](https://streamlit.io/).
 
 Для распознавания текста используется модель DeepPavlov/rubert-base-case-conversational (https://huggingface.co/DeepPavlov/rubert-base-cased-conversational)
 
