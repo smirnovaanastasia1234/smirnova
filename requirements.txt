@@ -1,3 +1,4 @@
-streamlit
+streamlit==1.1
+transformers
 tensorflow-cpu
-keras
+protobuf==3.19
