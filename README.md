@@ -11,6 +11,11 @@ Web-приложение для определения тональности т
 
 [Ссылка на развернутое приложение](https://smirnovaanastasia1234-smirnova-app-ls6d5v.streamlit.app/).
 
+## Результаты анализа тональности текста
+    0: NEUTRAL
+    1: POSITIVE
+    2: NEGATIVE
+
 ## Код 
 ```python
 import streamlit as st
