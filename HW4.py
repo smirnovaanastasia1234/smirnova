@@ -1,10 +1,11 @@
 import streamlit as st
 from transformers import pipeline
 
-@st.cache
+
 st.header("Определение тональности текстов")
 st.subheader("Введите текст для анализа")
 
+@st.cache
 text = st.text_area(" ",height=100)
 
 classifier = pipeline("sentiment-analysis",   
