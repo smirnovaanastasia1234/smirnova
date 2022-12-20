@@ -7,7 +7,7 @@ Web-приложение для определения тональности т
 
 Для распознавания текста используется модель DeepPavlov/rubert-base-case-conversational (https://huggingface.co/DeepPavlov/rubert-base-cased-conversational)
 
-- ["sentiment-analysis","blanchefort/rubert-base-cased-sentiment"]((https://huggingface.co/DeepPavlov/rubert-base-cased-conversational)
+- ["sentiment-analysis","blanchefort/rubert-base-cased-sentiment"](https://huggingface.co/DeepPavlov/rubert-base-cased-conversational).
 
 [Ссылка на развернутое приложение](https://smirnovaanastasia1234-smirnova-app-ls6d5v.streamlit.app/).
 
