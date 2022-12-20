@@ -1,4 +1,4 @@
-Практическое задание Задание 4
+Практическое задание 4
 
  Приложение **https://smirnovaanastasia1234-smirnova-hw4-fhwl4t.streamlit.app/**
 
