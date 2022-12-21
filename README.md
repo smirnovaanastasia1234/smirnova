@@ -9,9 +9,9 @@ Web-приложение для определения тональности т
 
 - ["sentiment-analysis","blanchefort/rubert-base-cased-sentiment"](https://huggingface.co/DeepPavlov/rubert-base-cased-conversational/).
 
-## The Streamlit GitHub badge
+## Streamlit app
 
-Streamlit's GitHub badge helps others find and play with your Streamlit app.
+Приложение можно найти , щелкнув по значку Streamlit
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://smirnovaanastasia1234-smirnova-app-ls6d5v.streamlit.app/)
 
@@ -46,8 +46,6 @@ if result:
     sent = res[0]['label'] 
     st.write(model(text)[0]["label"])
 ```
-
-
 
 
 ## Группа 32: Смирнова А., Кожедуб Н., Багаудинов Э., Петраков В. 
