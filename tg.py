@@ -3,8 +3,8 @@ import pandas as pd
 from io import StringIO
 
 # Настройка заголовка и текста 
-st.title("COVID 19 IN THE WORLD DASHBOARD")
-st.write("""This dashboard will present the spread of COVID-19 in the world by visualizing the timeline of the total cases and deaths. As well as the total number of vaccinated people.""")
+st.title("Анализ тональности текста\n")
+st.subheader("""Группа 32: Смирнова А., Кожедуб Н., Багаудинов Э., Петраков В.""")
 
 # Настройка боковой панели
 st.sidebar.title("About")
