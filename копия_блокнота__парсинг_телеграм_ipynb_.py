@@ -7,6 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1FFo5-ickTdXzLOw9f3kXCtHLEm0nLlQT
 """
 
+!pip install -q streamlit
+
 pip install telethon
 
 import pandas as pd
