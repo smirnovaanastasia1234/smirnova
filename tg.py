@@ -21,7 +21,7 @@ st.sidebar
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
-if option == 'Главная':
+if option == 'Загрузка файла':
 	st.write(
 			"""
 				## Описание проекта
