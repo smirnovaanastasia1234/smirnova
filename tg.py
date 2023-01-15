@@ -13,15 +13,15 @@ st.title('Анализ тональности текста\n', )
 st.subheader("Группа 32: Смирнова А., Кожедуб Н., Багаудинов Э., Петраков В.")
 
 # Sidebar options
-option = st.sidebar.selectbox('выбрать из списка', 
+st.sidebar 
 ["Загрузка файла",
  "Определение тональности текста", 
   "Диаграммы", 
- ])
+ ]
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
-if option == 'Загрузка файла':
+if option == 'Главная':
 	st.write(
 			"""
 				## Описание проекта
@@ -30,25 +30,22 @@ if option == 'Загрузка файла':
 		)
 elif option == "Определение тональности текста":
 
+
+
  @st.cache(allow_output_mutation=True)
- def load_df():
-    df = pd.read_csv("data/df.csv")
-    return df
 
-
-def load_model():
+ def load_model():
     model=pipeline("sentiment-analysis",   
                       "blanchefort/rubert-base-cased-sentiment")
     return model
-model = load_model()
-st.header ("Определение тональности текстов")
-st.subheader ("Введите текст для анализа")
-text = st.text_area(" ",height=100)
-result = st.button("Определить тональность текста")
+ model = load_model()
+ st.header ("Определение тональности текстов")
+ st.subheader ("Введите текст для анализа")
+ text = st.text_area(" ",height=100)
+ result = st.button("Определить тональность текста")
 
 
-if result:
+ if result:
     res = model(text)
     sent = res[0]['label'] 
     st.write(model(text)[0]["label"])
-
