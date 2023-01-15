@@ -12,8 +12,6 @@ st.sidebar.info(
     """
     This app is Open Source dashboard.
     """
-)
-st.sidebar.info("Feel free to collaborate and comment on the work. The github link can be found "
-                "[here](https://github.com/yuliianikolaenko/COVID_dashboard_proglib).")
+
 # Загружаем новые оптимизированные данные
 DATA = ('data.csv')
