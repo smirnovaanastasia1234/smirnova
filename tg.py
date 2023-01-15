@@ -34,7 +34,7 @@ elif option == "Определение тональности текста":
 def load_df():
     df = pd.read_csv("data/df.csv")
     return df
- @st.cache(allow_output_mutation=True)
+
 
  def load_model():
     model=pipeline("sentiment-analysis",   
