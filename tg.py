@@ -2,6 +2,8 @@
 import streamlit as st
 from transformers import pipeline
 from PIL import  Image
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Title of the application 
 st.title('Анализ тональности текста\n', )
@@ -44,3 +46,8 @@ elif option == "Определение тональности текста":
     res = model(text)
     sent = res[0]['label'] 
     st.write(model(text)[0]["label"])
+
+df_N = df_model[df_model["Sentinent"]=="NEGATIVE"]
+df_n =df_N.user_id.value_counts().sort_index()
+df_n.plot.bar(edgecolor='k', alpha=0.9, stacked = True, cmap="viridis")
+plt.title("Самые негативные user_id	")
