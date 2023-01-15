@@ -1,9 +1,4 @@
-import streamlit as st
-import pandas as pd
-from io import StringIO
-
-# Настройка заголовка и текста 
-import numpy as np
+#import numpy as np
 import streamlit as st
 from transformers import pipeline
 from PIL import  Image
@@ -12,12 +7,29 @@ from PIL import  Image
 st.title('Анализ тональности текста\n', )
 st.subheader("Группа 32: Смирнова А., Кожедуб Н., Багаудинов Э., Петраков В.")
 
+display = Image.open('images/display.jpg')
+display = np.array(display)
+st.image(display)
+
 # Sidebar options
-st.sidebar 
-["Загрузка файла",
+option = st.sidebar.selectbox('выбрать из списка', 
+["Главная",
  "Определение тональности текста", 
-  "Диаграммы", 
- ]
+  "Word Cloud", 
+ ])
+
+st.set_option('deprecation.showfileUploaderEncoding', False)
+
+if option == 'Главная':
+	st.write(
+			"""
+				## Описание проекта
+				Это инструмент анализа текста, разработанный группой 32. Доступ к инструментам можно получить на левой боковой панели.
+			"""
+		)
+elif option == "Определение тональности текста":
+
+
 
  @st.cache(allow_output_mutation=True)
 
