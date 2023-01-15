@@ -19,19 +19,6 @@ st.sidebar
   "Диаграммы", 
  ]
 
-st.set_option('deprecation.showfileUploaderEncoding', False)
-
-if option == 'Загрузка файла':
-	st.write(
-			"""
-				## Описание проекта
-				Это инструмент анализа текста, разработанный группой 32. Доступ к инструментам можно получить на левой боковой панели.
-			"""
-		)
-elif option == "Определение тональности текста":
-
-
-
  @st.cache(allow_output_mutation=True)
 
  def load_model():
